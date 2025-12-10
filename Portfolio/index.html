@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #1e1f26;
+            color: #ddd;
+        }
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 20px 60px;
+            background: #1b1c22;
+            border-bottom: 1px solid #3b3c44;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav .links a {
+            margin: 0 15px;
+            color: #ccc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav .links a:hover {
+            color: #f4b400;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 60px;
+        }
+        .hero-text h1 {
+            font-size: 3rem;
+            color: #f4b400;
+        }
+        .hero-text p {
+            margin: 15px 0;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+        .hero img {
+            width: 380px;
+            border-radius: 10px;
+            filter: grayscale(100%);
+        }
+        .btn {
+            padding: 10px 20px;
+            background: #f4b400;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        /* ABOUT */
+        section {
+            width: 80%;
+            margin: 40px auto;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #fff;
+        }
+        .divider {
+            width: 50px;
+            height: 3px;
+            background: #f4b400;
+            margin-bottom: 20px;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .skill-box {
+            background: #2a2b33;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .skill-box:hover {
+            background: #3b3c44;
+            transform: translateY(-5px);
+        }
+
+        /* PORTFOLIO */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* EXPERIENCE */
+        .timeline {
+            border-left: 3px solid #f4b400;
+            padding-left: 20px;
+        }
+        .timeline-item {
+            margin-bottom: 25px;
+        }
+        .timeline-item h3 {
+            color: #f4b400;
+        }
+
+        /* CONTACT */
+        .contact-box {
+            background: #2a2b33;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background: #1b1c22;
+            border-top: 1px solid #3b3c44;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo" style="color:#f4b400; font-size:1.5rem; font-weight:700;"></div>
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="hero-text">
+            <p>I'm</p>
+            <h1>Erwin B. Tacng Jr</h1>
+            <p>Web Developer & Designer</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t39.30808-6/535071582_2176830772837838_4592518468181401970_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGwN__p6myMwYTEPxrpmpZGWheCHYKzuetaF4IdgrO563W0rY51ndh_J19yGRh60XNDVyFi7IIUatSiDccFwZZl&_nc_ohc=Hbha29oG-bkQ7kNvwGXI4hl&_nc_oc=AdmuyHsSzPxR4xydq_MUMikmdHEYtm1MC9JKqjA3ktC4gwKKUS0ZDY8b9rDqU-cwMUc&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&_nc_gid=J_rP2PpG3aVd4xaxUVGyQA&oh=00_AfmoVD6XeKBZiO-C3YJScerKAptXf_SqS3aT3C-f_LH1hg&oe=693E9380" />
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About</h2>
+        <div class="divider"></div>
+        <p>
+            I am a passionate developer with experience in creating elegant and modern websites.
+            I enjoy solving problems and converting ideas into digital products.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h2>My Skills</h2>
+        <div class="divider"></div>
+        <div class="skills">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">PHP</div>
+            <div class="skill-box">Laravel</div>
+            <div class="skill-box">MySQL</div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="divider"></div>
+        <div class="portfolio-grid">
+            <img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t39.30808-6/489789265_2070731270114456_581325933558086650_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeH63iIhg4OrR-X3vgpGQOLEJJqG0NXvr9okmobQ1e-v2v4a9hm4WTsWyQJNppA3AqcMvj18C4WFlI0jCCyvAuAi&_nc_ohc=tu3_-xwb3OIQ7kNvwE52OY2&_nc_oc=Adlw6ws41UoepP2Au3zX41yuYjQDlC8Sn0TGx1VKyfZejVmPu7waIZLmP-4_u5p8mk4&_nc_zt=23&_nc_ht=scontent.fceb1-1.fna&_nc_gid=Y8T44RorpE8Go0CFuYAj7g&oh=00_Afn9nSaEOhXekWT--wz2-vYjCT0gtnOGU66zl_tkaqD6pQ&oe=693E913D">
+            <img src="https://scontent.fceb1-3.fna.fbcdn.net/v/t39.30808-6/490137838_2069686593552257_1132431658382229087_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGn2SPoEShfZtrriPkUZJg_jtJreUqyBHaO0mt5SrIEdnEPVvWEUsDy5hwqb7jdskHEa1qkwpLy6h5BWpdVlSkf&_nc_ohc=eVOdbtCCNWYQ7kNvwFR7ysS&_nc_oc=AdnWLMofHiNrxSwzcSCh0LKNb4v-e0y9WJmGNF9dr1D7MRN1QFyFEW6JKGhxzINSrE8&_nc_zt=23&_nc_ht=scontent.fceb1-3.fna&_nc_gid=F-ROpzf2RZRUSIqO9u2tfg&oh=00_Afltoy8gX817zY4bfDBSrKgZB8hmhN_r_FkrKFTCZufNuA&oe=693E8264">
+            <img src="https://scontent.fceb1-1.fna.fbcdn.net/v/t39.30808-6/469605718_1975614726292778_6580283599681488360_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEzI7ggKK8bvzKYjJSDQytCkvdfiKKEfICS91-IooR8gJ05Mv5OmFIwWLhmnIwaxQ5_hdA72GkF8RAqT1wLzRQl&_nc_ohc=fwhAmfKig18Q7kNvwHlMK_3&_nc_oc=AdnVVqxGBdxK6lmMKQw4kqeQlQqD_36PfSpnPZ3NvRv394u1z3MeloN9H5CusYPAzaE&_nc_zt=23&_nc_ht=scontent.fceb1-1.fna&_nc_gid=dlvcZcjKK3YPaC9loOt94Q&oh=00_Afn4iuRmKiLZGLQ5iPMpxfrjS0Y_WWIuWur0MZVeT8-TEw&oe=693EA451">
+            <img src="">
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section>
+        <h2>Experience</h2>
+        <div class="divider"></div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>2021 - Senior Developer</h3>
+                <p>Worked at Company XYZ building scalable and modern systems.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2020 - Junior Developer</h3>
+                <p>Assisted in frontend and backend development for mid-size clients.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="divider"></div>
+        <div class="contact-box">
+            <p>Email: erwintacang@gmail.com</p>
+            <p>Phone: 09560075926</p>
+            <p>Location: Talibon , Bohol ,Philippines</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Thanks for Scrolling © 2025</p>
+    </footer>
+
+</body>
+</html>
